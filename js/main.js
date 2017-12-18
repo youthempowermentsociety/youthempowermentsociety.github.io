@@ -292,5 +292,28 @@
 		testimonialCarousel();
 	});
 
+	// Hide Header on on scroll down
+	$( document ).ready(function() {
+    	console.log( "ready!" );
+		var mywindow = $(window);
+		var mypos = mywindow.scrollTop();
+		var up = false;
+		var newscroll;
+		mywindow.scroll(function () {
+		    newscroll = mywindow.scrollTop();
+		    if (newscroll > mypos && !up) {
+		        $('.header-one').stop().fadeOut();
+		        $('.fh5co-nav-toggle').css("margin-top", "-40px");
+		        // $('.fh5co-nav-toggle').css("background-color", "white");
+		        up = !up;
+		        console.log(up);
+		    } else if(newscroll < mypos && up) {
+		        $('.header-one').stop().fadeIn();
+		        $('.fh5co-nav-toggle').css("margin-top", "");
+		        up = !up;
+		    }
+		    mypos = newscroll;
+		});
+	});
 
 }());

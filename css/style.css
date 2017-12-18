@@ -91,8 +91,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav .top-menu {
   padding: 22px 0;
+  background-color: white;
 }
 .fh5co-nav .top {
+  background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 0px 0;
   margin-bottom: 0;
@@ -1414,7 +1416,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav-toggle {
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 55px;
   z-index: 21;
@@ -1782,7 +1784,5 @@ input:checked + label {
     padding: 15px;
   }
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
