@@ -1455,7 +1455,13 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 8px 20px !important;
 }
 .btn.btn-lg {
-  padding: 18px 36px !important;
+  padding: 8px 72px !important;
+  background: #2D6CDF;
+  border-color: #2D6CDF;
+}
+.btn.btn-lg:hover, .btn.btn-lg:focus, .btn.btn-lg:active {
+  background: #437be2 !important;
+  border-color: #437be2 !important;
 }
 .btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
