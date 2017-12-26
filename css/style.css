@@ -1863,7 +1863,7 @@ input:checked + label {
 .employee {
   list-style-type: none;
   margin: 0px;
-  padding: 0px 120px 0px 0px;
+  padding: 0px 250px 0px 0px;
   text-align: right;
 }
 .employee li {  
@@ -1906,7 +1906,7 @@ input:checked + label {
   background-color: white;
   box-shadow: 0px 4px 6px rgba(100,100,100,0.6);
 }
-.parent li::before{
+/*.parent li::before{
   content: "";
   width: 19%;
   height: 87px;
@@ -1916,7 +1916,7 @@ input:checked + label {
   border-left: 1px solid #666;
   border-radius: 10px 0px;
   float: left;
-}
+}*/
 .self li::before {
   content: "";
   width: 2px;
@@ -1934,7 +1934,7 @@ input:checked + label {
   border-left: 1px solid #666;
   float: left;
 }
-.child li::before{
+/*.child li::before{
   content: "";
   width: 19%;
   height: 140px;
@@ -1948,7 +1948,7 @@ input:checked + label {
 .child li:first-child::before{
   height: 80px; 
   margin-top: -12px;
-}
+}*/
 .child li {
   padding-top: 10px;
 }
@@ -1956,13 +1956,21 @@ input:checked + label {
 /*Media query for mundram services hierarchy division*/
 
 @media screen and (max-width: 768px) {
+
+.employee {
+  list-style-type: none;
+  margin: 0px -100px 0px -100px; 
+  padding: 0px 150px 0px 0px;
+  text-align: right;
+}
+
 /*  .mundram-services {
     width: 1400px;
   }*/
 .profile div{
   margin: 5px 5px;  
 }
-.parent li::before{
+/*.parent li::before{
   content: "";
   width: 19%;
   height: 350px;
@@ -1973,7 +1981,7 @@ input:checked + label {
   border-radius: 10px 0px;
   float: left;
 }
-.self li::before {
+*//*.self li::before {
   content: "";
   width: 2px;
   height: 10px;
@@ -1989,8 +1997,8 @@ input:checked + label {
   display: block;
   border-left: 1px solid #666;
   float: left;
-}
-.child li::before{
+}*/
+/*.child li::before{
   content: "";
   width: 19%;
   height: 440px;
@@ -2007,7 +2015,7 @@ input:checked + label {
 }
 .child li {
   padding-top: 10px;
-}
+}*/
 
 }
 
